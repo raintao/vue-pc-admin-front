@@ -1,0 +1,32 @@
+@import "src/style/base/variables";
+
+.el-submenu__title {
+    .svg-icon {
+        fill: #fff;
+        margin-right: 6px;
+    }
+}
+
+.el-menu-item {
+    .svg-icon {
+        fill: #fff;
+        margin-right: 6px;
+    }
+
+    &.is-active {
+        .svg-icon {
+            fill: $color-main;
+        }
+    }
+}
+
+.el-submenu {
+    .el-menu-item {
+        background-color: $color-back !important;
+
+        &:hover {
+            background-color: #001528 !important;
+        }
+    }
+}
+

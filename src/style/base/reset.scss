@@ -1,0 +1,146 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+input,
+select,
+table,
+tr,
+td,
+th,
+button,
+textarea {
+    font-family: $font-family;
+}
+
+html {
+    height: 100%;
+    font-size: $font-size-base;
+}
+
+body {
+    height: 100%;
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q,
+blockquote {
+    quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+    -webkit-touch-callout: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="month"],
+input[type="number"],
+input[type="time"],
+input[type="date"] {
+    // border: 1px solid #d7d7d7;
+    // border-radius: 0;
+    // font-weight: inherit;
+    // background-color: transparent;
+    // outline: none;
+    &::-webkit-input-placeholder {
+        color: $color-font-placeholder;
+    }
+}
+
+// input[type="month"],
+// input[type="date"] {
+//     align-items: center;
+//     display: -webkit-inline-flex;
+//     overflow: hidden;
+//     padding: 0;
+//     line-height: rem(38);
+//     -webkit-padding-start: 1px;
+// }
+textarea {
+    &::-webkit-input-placeholder {
+        color: $color-font-placeholder;
+    }
+}
+
+canvas {
+    text-size-adjust: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-size-adjust: none;
+}

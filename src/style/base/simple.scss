@@ -1,0 +1,85 @@
+
+//外边距
+$marginNum: (5, 10, 15, 20, 25, 30, 40, 50, 60, 70);
+@each $mNum in $marginNum {
+    .mt-#{$mNum} {
+        margin-top: #{$mNum}px;
+    }
+
+    .mb-#{$mNum} {
+        margin-bottom: #{$mNum}px;
+    }
+
+    .ml-#{$mNum} {
+        margin-left: #{$mNum}px;
+    }
+
+    .mr-#{$mNum} {
+        margin-right: #{$mNum}px;
+    }
+}
+
+//字号大小
+.font-small { font-size: $font-size-small; }
+.font-base { font-size: $font-size-base; }
+.font-large { font-size: $font-size-large; }
+.font-extra-large { font-size: $font-size-extra-large; }
+
+//缩放
+@for $i from 0 to 11 {
+    //.scale0 ~ .scale10
+    .scale#{$i} {
+        transform: scale(#{$i * 0.1});
+    }
+}
+
+//透明度
+@for $i from 0 to 11 {
+    //.opacity0 ~ .opacity10
+    .opacity#{$i} {
+        opacity: #{ $i };
+    }
+}
+
+//长度（以24块拼凑成100%）
+.table-box {
+    display: table;
+    width: 100%;
+}
+
+@for $i from 1 to 25 {
+    .span-#{$i} {
+        display: table-cell;
+        width: #{$i * 4.16666667%};
+        vertical-align: top;
+    }
+}
+
+.v-align-top {
+    vertical-align: top;
+}
+
+.v-align-middle {
+    vertical-align: middle;
+}
+
+.v-align-bottom {
+    vertical-align: bottom;
+}
+
+//文本位置
+.text-left,
+.t-l {
+    text-align: left;
+}
+
+.text-center,
+.t-c {
+    text-align: center;
+}
+
+.text-right,
+.t-r {
+    text-align: right;
+}
+

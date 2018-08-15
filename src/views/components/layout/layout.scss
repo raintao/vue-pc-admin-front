@@ -1,0 +1,116 @@
+@import "src/style/base/variables";
+@import "src/style/base/mixins";
+
+.app-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @include clearfix;
+}
+
+.el-header {
+    height: 50px !important;
+    padding: 0;
+}
+
+// 整体容器
+.el-container {
+    height: 100vh;
+    // background: $background-color-main;
+}
+
+.el-main {
+    width: calc(100% - 300px);
+    overflow: auto;
+}
+
+.el-aside {
+    width: 200px !important;
+    background-color: #304156;
+}
+
+// sidebar
+.sidebar-container {
+    transition: width 0.28s;
+
+    .toggle-sidebar {
+        // height: 56px;
+        // line-height: 56px;
+
+        .slide-button {
+            float: none !important;
+            text-align: center;
+            color: $color-white;
+
+            .hamburger {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.hide-sidebar {
+    &.sidebar-container,
+    &.sidebar-container .el-menu {
+        width: 36px !important;
+    }
+
+    /deep/ {
+        .submenu-title-noDropdown {
+            display: inline-block;
+            position: relative;
+            padding-left: 10px !important;
+
+            span {
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+                transition: opacity .3s cubic-bezier(.55, 0, .1, 1);
+                opacity: 0;
+            }
+
+            &:hover {
+                span {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: -145px;
+                    width: 140px;
+                    height: 56px;
+                    border-radius: 3px;
+                    z-index: 1002;
+                    visibility: visible;
+                    text-align: left;
+                    text-indent: 20px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .el-submenu {
+            .el-submenu__title {
+                padding-left: 8px !important;
+
+                & > span {
+                    display: none;
+                }
+
+                .el-submenu__icon-arrow {
+                    display: none;
+                }
+            }
+
+            .nest-menu {
+                .el-submenu__icon-arrow {
+                    display: block !important;
+                }
+
+                span {
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "src/style/base/variables";
+@import "src/style/common/transition";
+
+.app-breadcrumb.el-breadcrumb {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 10px;
+
+    .no-redirect {
+        color: #97a8be;
+        cursor: text;
+    }
+}
+
+/deep/ {
+    .el-breadcrumb__inner,
+    .el-breadcrumb__inner a {
+        font-weight: 700;
+        color: #303133;
+        transition: color .2s cubic-bezier(.645, .045, .355, 1);
+    }
+}
+

@@ -1,0 +1,65 @@
+// 全局变量
+
+//-- 主题色
+$color-main: 			#4E6CEF;    // 蓝 默认
+
+//-- 字体色
+$color-font-main:       #303133;    // 主字体色
+$color-font-base:       #606266;    // 常规字体色
+$color-font-sub:        #909399;    // 次要字体色
+$color-font-placeholder:#C0C4CC;    // 占位字体色（placeholder）
+
+//-- 边框色
+$border-main:           #DCDFE6;    // 一级边框
+$border-sub:            #E4E7ED;    // 二级边框
+$border-secon:          #EBEEF5;    // 三级边框
+$border-table:          #bdbdbd54;
+
+//-- 背景色
+$background-color-main: #EFF3F9; //主题背景色
+$background-gray:        #F1F5F8;
+$color-background:       #F6F6F6;
+$background-table:       #F0FbFF;
+
+//-- 状态色
+$color-info:            #909399;    // 信息
+$color-success:         #30C27C;    // 成功
+$color-warning:         #FAC258;    // 警告
+$color-danger:          #EB4D5C;    // 危险
+
+//-- 中性色黑
+$color-back:            #1f2d3d;    // 黑
+$color-light-back: 		#324057;	// 浅黑
+$color-extra-light-black:#475669;	// 浅黑
+
+//-- 中性色灰
+$color-grey:            #8d8d8d;    // 灰
+$color-light-grey: 		#D3DCE6;	// 浅灰
+$color-grey-dark: 		#585f6f;	// 深灰
+
+// 全局颜色拓展区 (上述主色，辅助色和中性色基于element-ui默认规范，请不要随意修改)
+
+$color-red: 			#eb2f18;	// 红
+$color-red-light:       #FE7045;    // 红
+$color-blue: 			#4E6CEF;	// 蓝
+$color-white: 			#fff;		// 白
+
+
+// 盒子阴影shadow
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+
+//-- 基础字体大小
+$font-size-base:		14px;	// 基础字体大小
+$font-size-small:		12px;   // 辅助小字
+$font-size-medium:		16px;   // 小标题
+$font-size-large:		18px;   // 标题
+$font-size-extra-large:	20px;   // 主标题
+
+// 字体粗细
+$font-normal: 400;
+$font-medium: 500;
+$font-light:  300;
+$font-thin:   100;
+
+// 字体
+$font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;

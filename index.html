@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>vue-pc-admin</title>
+        <style>
+            .app-page-loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+            }
+        
+            .page-loader-inner {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        
+            .loader-ball-pulse>div:nth-child(0) {
+                -webkit-animation: loader-scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+                animation: loader-scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+            }
+        
+            .loader-ball-pulse>div:nth-child(1) {
+                -webkit-animation: loader-scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+                animation: loader-scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+            }
+        
+            .loader-ball-pulse>div:nth-child(2) {
+                -webkit-animation: loader-scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+                animation: loader-scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+            }
+        
+            .loader-ball-pulse>div:nth-child(3) {
+                -webkit-animation: loader-scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+                animation: loader-scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+            }
+        
+            .loader-ball-pulse>div {
+                background-color: #aaa;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 2px;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                display: inline-block;
+            }
+        
+            @keyframes loader-scale {
+                30% {
+                    -webkit-transform: scale(0.3);
+                    transform: scale(0.3);
+                }
+                100% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="appPageLoading" class="app-page-loader">
+            <div class="page-loader-inner loader-ball-pulse">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="app"></div>
+    </body>
+</html>

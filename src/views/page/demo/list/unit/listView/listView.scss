@@ -1,0 +1,16 @@
+// 引入变量，以提供引用
+@import "src/style/base/variables";
+
+.content-body {
+    padding-top: 48px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.test-list {
+    li {
+        line-height: 1.5;
+        padding: 5px;
+        border-bottom: 2px solid #ccc;
+    }
+}

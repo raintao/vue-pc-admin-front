@@ -1,0 +1,55 @@
+/**
+ * minxins
+ */
+
+// 省略号
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 文字阴影
+@mixin text-shadow($shadow) {
+    text-shadow: $shadow;
+}
+
+// 盒阴影
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+// 渐变
+@mixin background-image($color) {
+    background-image: $color;
+}
+
+// 渐变
+@mixin text-gradient($color) {
+    background: $color;
+    color: transparent;
+    text-transform: uppercase;
+    background-clip: text;
+}
+
+// opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+
+    @if $opacity == 1 {
+        filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    }
+
+    @else {
+        filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})";
+    }
+}
+
+// 清除浮动
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

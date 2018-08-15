@@ -1,0 +1,16 @@
+// 引入变量，以提供引用
+@import "src/style/base/variables";
+
+.form-view {
+    max-width: 600px;
+}
+
+.el-select {
+    width: 100%;
+}
+
+.el-checkbox,
+.el-radio {
+    min-width: 200px;
+    margin-left: 0;
+}

@@ -1,0 +1,18 @@
+@import "src/style/base/base";
+
+h1,
+h2 {
+    font-weight: normal;
+    text-align: center;
+    color: $color-danger;
+}
+
+input,
+button {
+    font-size: 12px;
+}
+
+.content-body {
+    padding-top: 96px;
+    text-align: center;
+}
